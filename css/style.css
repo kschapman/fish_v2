@@ -1,0 +1,354 @@
+/*--------------FONT---------------*/
+
+@font-face {
+	font-family: SuburbanBold;
+	src: url('../fonts/SuburbanBold.ttf');
+}
+
+/*--------------BODY---------------*/
+
+* {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+}
+
+p {
+	font-size: 24px;
+	color: white;
+	font-family: 'cabin'
+}
+
+/*---------BACKGROUND IMAGES--------*/
+
+.sect {
+    background-size: cover;
+    background-repeat: no-repeat;
+    /*background-attachment: fixed;*/
+		width: 100vw;
+		height: 100vh;
+		display: table;
+		background-position: center center;
+}
+
+.home {
+    background-size: cover;
+    background-repeat: no-repeat;
+    /*background-attachment: fixed;*/
+		width: 100vw;
+		height: 100vh;
+		display: table;
+		background-position: center left;
+}
+
+#backImg1 {
+	background-image: url(../img/fish.jpg);
+}
+
+#backImg2 {
+	background-image: url(../img/about.jpg);
+}
+
+#backImg3 {
+	background-image: url(../img/food.jpg);
+}
+
+#backImg4 {
+	background-image: url(../img/menu.jpg);
+}
+
+#backImg5 {
+	background-image: url(../img/bookings.jpg);
+}
+
+#backImg6 {
+	background-image: url(../img/contact.jpg);
+}
+
+/*--------------NAVIGATION------------*/
+
+.navigation {
+	position: fixed;
+	width: 100%;
+	padding-top: 15px;
+	padding-bottom: 15px;
+  background: rgb(30, 25, 25); /* Fall-back for browsers that don't
+                                    support rgba */
+  background: rgba(30, 25, 25, .5);
+}
+
+.navigation ul {
+	margin-right: 20px;
+}
+
+.navigation li {
+	display: inline-block;
+	float: right;
+}
+
+.navigation li a {
+	text-decoration: none;
+	color: #17bcbf;
+	font-size: 22px;
+  padding: 20px;
+	font-family: 'cabin';
+}
+
+.navigation li a:hover {
+	text-decoration: underline;
+}
+
+/*---------BACKGROUND HEADINGS--------*/
+
+h1 {
+	font-family: SuburbanBold;
+	color: white;
+	font-size: 120px;
+}
+
+h3 {
+	color: white;
+	font-size: 30px;
+	font-family: 'cabin';
+	text-align: center;
+}
+
+.heading {
+	display: table-cell;
+	vertical-align: middle;
+	margin: 0 auto;
+	text-align: center;
+}
+
+/*--------HOME FISH ICON BUTTON-------*/
+
+#fishLogo {
+    width: 100px;
+    position: fixed;
+    margin-left: 10px;
+    opacity: 1;
+		margin-top: -15px;
+}
+
+#fishLogo:hover {
+    cursor: pointer;
+}
+
+/*------------SLIDE-OUT NAV-----------*/
+
+#slide {
+  height: 100%;
+  width: 240px;
+  list-style-type: none;
+  display: none;
+  opacity: 0.8;
+  background-color: black;
+  position: fixed;
+  right: 0;
+}
+
+#slide li {
+  list-style-type: none;
+	font-size: 25px;
+	line-height: 0px;
+  margin-top: 50px;
+	text-align: center;
+}
+
+#slide li a {
+  text-decoration: none;
+  color: white;
+  font-family: cabin sans-serif;
+}
+
+#burger-container {
+  width: 30px;
+	position: fixed;
+	right: 18px;
+	top: 18px;
+}
+
+#burger {
+  display: block;
+}
+
+#burger span {
+  background: #17bcbf;
+  display: block;
+  width: 30px;
+  height: 5px;
+  margin-bottom: 5px;
+  transition: all ease-in-out 0.4s;
+  position: relative;
+  top: 0;
+}
+
+#burger-container.open span:nth-child(2) {
+  width: 0;
+  opacity: 0;
+}
+
+#burger-container.open span:nth-child(1) {
+  transform: rotate(45deg);
+  top: 9px;
+}
+
+#burger-container.open span:nth-child(3) {
+  transform: rotate(-45deg);
+  top: -12px;
+}
+
+/*---------PAGE CONTENT_TEXT---------*/
+
+.text {
+	letter-spacing: 2.5px;
+	color: white;
+	font-family: 'Cabin', sans-serif;
+	padding-left: 30px;
+  padding-right: 30px;
+}
+
+/*-------------MENU-------------*/
+
+.button {
+    background-color: #17BCBF;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+		padding: 15px 20px;
+		font-size: 30px;
+    margin: 4px 2px;
+    cursor: pointer;
+		font-family: 'Cabin', sans-serif;
+}
+
+.info {
+	display: table-cell;
+	margin: 0 auto;
+	text-align: center;
+}
+
+/*------------CONTACT PAGE-----------*/
+
+.contact_heading {
+	margin-top: 55px;
+}
+
+.map {
+	text-align: center;
+  margin-top: 20px;
+}
+
+img {
+	width: 75%;
+}
+
+.facebook {
+	margin: 0 auto;
+	width: 100px;
+	margin-top: -20px;
+}
+
+form {
+  text-align: center;
+
+}
+
+.submit_btn {
+	margin-bottom: 20px;
+  padding: 2px;
+	font-size: 12px;
+}
+
+#comment {
+  width: 500px;
+  height: 100px;
+}
+
+
+/*--------------MEDIA QUERIES-------------*/
+
+@media screen and (min-width: 769px) {
+
+	#burger-container {
+		display: none;
+	}
+
+	.navigation{
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+
+		h1 {
+        font-size: 100px;
+    }
+
+		.button {
+		    padding: 10px 15px;
+		    font-size: 25px;
+		}
+
+		.text {
+			padding-left: 50px;
+		  padding-right: 50px;
+		}
+
+		.navigation {
+			display: none;
+		}
+
+		#comment {
+			width: 75%;
+		}
+
+		.submit_btn {
+			-webkit-appearance: none;
+			color: white;
+		}
+
+}
+
+@media screen and (min-width: 768px) {
+
+	img {
+		max-width: 500px;
+	}
+
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 80px;
+    }
+
+		p {
+				font-size: 16px;
+		}
+
+		#fishLogo {
+		    max-width: 80px;
+				margin-top: -10px;
+    		margin-left: 5px;
+			}
+
+		#slide {
+			max-width: 200px;
+		}
+
+		#slide li {
+		  list-style-type: none;
+			font-size: 20px;
+		  margin-top: 50px;
+		}
+
+		.button {
+		    padding: 10px 15px;
+		    font-size: 25px;
+		}
+
+}
