@@ -14,7 +14,7 @@
 }
 
 p {
-	font-size: 24px;
+	font-size: 18px;
 	color: white;
 	font-family: 'cabin';
 }
@@ -89,13 +89,21 @@ p {
 .navigation li a {
 	text-decoration: none;
 	color: #17bcbf;
-	font-size: 22px;
+	font-size: 18px;
   padding: 20px;
 	font-family: 'cabin';
 }
 
 .navigation li a:hover {
 	text-decoration: underline;
+}
+
+.facebook {
+	margin: 0 auto;
+	width: 35px;
+	margin-top: -5px;
+	margin-right: 8px;
+	margin-left: -15px;
 }
 
 /*---------BACKGROUND HEADINGS--------*/
@@ -123,11 +131,11 @@ h3 {
 /*--------HOME FISH ICON BUTTON-------*/
 
 #fishLogo {
-    width: 100px;
+    width: 80px;
     position: fixed;
     margin-left: 10px;
     opacity: 1;
-		margin-top: -15px;
+		margin-top: -10px;
 }
 
 #fishLogo:hover {
@@ -247,11 +255,7 @@ img {
 	width: 75%;
 }
 
-.facebook {
-	margin: 0 auto;
-	width: 100px;
-	margin-top: -20px;
-}
+
 
 form {
   text-align: center;
@@ -267,6 +271,23 @@ form {
 #comment {
   width: 500px;
   height: 100px;
+}
+
+.icon {
+	max-width: 30px;
+	max-height: 30px;
+	margin-right: 10px;
+	margin-bottom: -8px;
+}
+
+.map_icon {
+	max-width: 20px;
+	margin-right: 10px;
+	margin-bottom: -6px;
+}
+
+.smaller {
+	font-size: 12px;
 }
 
 
