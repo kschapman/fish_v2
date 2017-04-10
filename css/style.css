@@ -119,6 +119,7 @@ h3 {
 	font-size: 30px;
 	font-family: 'cabin';
 	text-align: center;
+	margin-top: -10px;
 }
 
 .heading {
@@ -149,11 +150,10 @@ h3 {
   width: 240px;
   list-style-type: none;
   display: none;
-  opacity: 0.8;
+  opacity: 0.9;
   background-color: black;
   position: fixed;
   right: 0;
-	font-family: 'cabin' sans-serif;
 }
 
 #slide li {
@@ -162,13 +162,18 @@ h3 {
 	line-height: 0px;
   margin-top: 50px;
 	text-align: center;
-	font-family: 'cabin' sans-serif;
 }
 
 #slide li a {
   text-decoration: none;
   color: white;
+	font-family: 'cabin';
+}
 
+.facebook_slide {
+	margin: 0 auto;
+	width: 35px;
+  margin-top: -20px;
 }
 
 #burger-container {

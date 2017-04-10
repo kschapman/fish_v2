@@ -8,7 +8,7 @@ $(document).ready(function(){
   //   $('#slide').hide();
   // });
 
-  $("#burger-container").on('click', function(){
+  $("#burger-container").click(function(){
     $(this).toggleClass("open");
     $('#slide').toggle();
   });
