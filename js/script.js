@@ -17,7 +17,7 @@ $(document).ready(function(){
   //   $('#slide').show();
   // });
 
-  $('body li a').click(function(){
+  $('#slide li a').click(function(){
     $('#slide').hide();
     $('#burger-container').toggleClass("open");
   });
