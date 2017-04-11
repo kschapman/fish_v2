@@ -22,6 +22,17 @@ $(document).ready(function(){
     $('#burger-container').toggleClass("open");
   });
 
+  if ($(window).width()>768) {
+    $('#slide').hide();
+  }
 
 
+});
+
+
+$(window).resize(function(){
+  if ($(window).width()>768) {
+    $('#slide').hide();
+    $('#burger-container').removeClass("open");
+  }
 });

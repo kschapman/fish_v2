@@ -305,6 +305,10 @@ form {
 		padding-top: 20px;
     padding-bottom: 10px;
 	}
+
+	#slide {
+		display: none;
+	}
 }
 
 @media screen and (max-width: 768px) {
