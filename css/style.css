@@ -288,6 +288,11 @@ form {
 	margin-bottom: -6px;
 }
 
+.mapping {
+	display: block;
+	margin: 0 auto;
+}
+
 .smaller {
 	font-size: 12px;
 }
